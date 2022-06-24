@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragnarok Online</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="imagenes\favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--ARRANCA NAV BAR-->
+    <header class="header">
+        <nav class="nav">
+          <img
+            src="imagenes\rologo.png"
+            alt="Kengan Logo"
+            class="nav__logo"
+            id="logo"
+            designer="Diego"
+            data-version-number="3.0"
+          />
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link" href="#section--1">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">Features</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link btn--donate" href="#section--3">Donaciones</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Inicia Sesion</a
+              >
+            </li>
+          </ul>
+        </nav>
+   <!--TERMINA NAVBAR-->
+
+   <!--ARRANCA HEADER-->
+   <div class="header__title">
+    <!-- <h1 onclick="alert('HTML alert')"> -->
+    <h1>
+      El
+      <!-- Green highlight effect -->
+      <span class="highlight">servidor</span>
+      N1;<br />
+      <span class="highlight" >RAGNAROKTT</span>
+    </h1>
+    <h4>RagnarokTT es el servidor N1 latino del conocido MMO Ragnarok Online</h4>
+    <button class="btn--text btn--scroll-to">Aprende mas &DownArrow;</button>
+    <img
+      src="imagenes\ragnarokk.jpg"
+      class="header__img"
+      alt="Ragnarok online"
+    />
+  </div>
+</header>
+ <!--TERMINA HEADER-->
+
+
+  <!--TITULO DE FEATURES-->
+ <section class="section" id="section--1">
+    <div class="section__title">
+      <h2 class="section__description">Features</h2>
+      <h3 class="section__header">
+        Todo lo que necesitas saber sobre el server N1 de Latinoamerica
+      </h3>
+    </div>
+ <!--TERMINA TITULO DE FEATURES-->
+
+
+ <!--ARRANCAN FEATURES-->
+    <div class="features">
+      <img
+        src="imagenes\pvp.jpg"
+        data-src="imagenes\pvp.jpg"
+        alt="PvP"
+        class="features__img lazy-img"
+      />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-monitor"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Volvieron las WoE!! Todos los Viernes y Sabados</h5>
+        <p>
+            War of Emperium, or WoE for short, is a special weekly battle in Ragnarok Online in which guilds contest over ownership of castles. Owning a castle allows a guild to have their own physical headquarters and gain access to special dungeons and treasure boxes.
+        </p>
+      </div>
+
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-trending-up"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Ahora con Clases Terciarias!! (Desde el 1 de 2022).</h5>
+        <p>
+            Las siguientes clases están disponibles después de que un player alcanza el nivel 99 siendo secundario o avanzado:
+            Arch Bishop, Guillotine Cross, Rune Knight, Mechanic, Ranger, Sura and Shadow Chaser.
+        </p>
+      </div>
+      <img
+        src="imagenes\runeknight.png"
+        data-src="imagenes\runeknight.png"
+        alt="Rune Knight"
+        class="features__img lazy-img"
+      />
+
+      <img
+      src="imagenes\server.jpg"
+      data-src="imagenes\server.jpg"
+      alt="Server"
+      class="features__img lazy-img"
+    />
+    <div class="features__feature">
+      <div class="features__icon">
+        <svg>
+          <use xlink:href="img/icons.svg#icon-credit-card"></use>
+        </svg>
+      </div>
+      <h5 class="features__header">Por que Ragnarok TT es tu mejor opcion para jugar Ragnarok Online?</h5>
+      <p>
+      En los ultimos años nos hemos acostumbrado a servidores inestables de Ragnarok Online que constantemente nos bombardean con microtransacciones.
+      Este no es el caso de RagnarokTT, donde solo tienes permitido donar $5 dolares mensuales para ayudar al mantenimiento del servidor y que son repuestos en 5 Millones de Zeny (Moneda del juego).
+      El Servidor ya lleva 3 años consolidandose como el mas populado y activo de Latinoamerica, con mas de 10mil players activos a cada hora del dia.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+       <!--TERMINAN FEATURES-->
+   
+
+       <!--VENTANA DE INICIO SESION-->
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Inicia sesion o  <br />
+         <span class="highlight">Registrate</span>
+      </h2>
+      <form class="modal__form">
+        <label>Nombre</label>
+        <input type="text" />
+        <label>Apellido</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="email" />
+        <button class="btn">Siguiente paso &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
